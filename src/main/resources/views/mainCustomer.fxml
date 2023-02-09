@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainCustomerController">
+   <children>
+      <AnchorPane layoutX="257.0" layoutY="114.0" prefHeight="520.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox layoutY="51.0" prefHeight="470.0" prefWidth="140.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="140.0" text="Category" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="10.0" prefWidth="140.0" />
+                  <HBox fx:id="cakeButton" onMouseClicked="#cakeButtonClicked" prefHeight="17.0" prefWidth="140.0">
+                     <children>
+                        <AnchorPane prefHeight="31.0" prefWidth="82.0" />
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product_icon/cake.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="122.0" text="  Cake">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator opacity="0.0" prefHeight="10.0" prefWidth="140.0" style="-fx-background-color: #20bf6b;" />
+                  <HBox fx:id="breadButton" onMouseClicked="#breadButtonClicked" prefHeight="17.0" prefWidth="140.0">
+                     <children>
+                        <AnchorPane prefHeight="31.0" prefWidth="82.0" />
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product_icon/bread.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="122.0" text="  Bread">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator opacity="0.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #20bf6b;" />
+                  <HBox fx:id="cookieButton" onMouseClicked="#cookieButtonClicked" prefHeight="17.0" prefWidth="140.0">
+                     <children>
+                        <AnchorPane prefHeight="31.0" prefWidth="82.0" />
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product_icon/cookie.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="122.0" text="  Cookie">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator opacity="0.0" prefHeight="10.0" prefWidth="200.0" />
+                  <HBox fx:id="dessertButton" onMouseClicked="#dessertButtonClicked" prefHeight="17.0" prefWidth="140.0">
+                     <children>
+                        <AnchorPane prefHeight="31.0" prefWidth="82.0" />
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product_icon/dessert.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="122.0" text="  Dessert">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator opacity="0.0" prefHeight="10.0" prefWidth="200.0" />
+                  <HBox fx:id="frozenButton" onMouseClicked="#frozenButtonClicked" prefHeight="17.0" prefWidth="140.0">
+                     <children>
+                        <AnchorPane prefHeight="31.0" prefWidth="82.0" />
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product_icon/frozen.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="122.0" text="  Frozen">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+            <ScrollPane layoutX="140.0" layoutY="50.0" prefHeight="470.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1232.0" prefWidth="744.0">
+                     <children>
+                        <GridPane fx:id="grid" alignment="CENTER" layoutX="42.0" layoutY="76.0" prefHeight="600.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+            <AnchorPane prefHeight="50.0" prefWidth="900.0" styleClass="titlePane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="category" alignment="CENTER" layoutX="363.0" layoutY="7.0" prefHeight="18.0" prefWidth="174.0" text="Product" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="searchField" layoutX="62.0" layoutY="8.0" onKeyPressed="#enterKeyPressed" prefHeight="35.0" prefWidth="182.0" promptText="Search" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="31.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="804.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+                  <MenuButton fx:id="userFullNameLabel" alignment="CENTER_RIGHT" layoutX="555.0" layoutY="10.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="26.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="Nguyễn Minh Quânnnnn">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#profileClicked" text="Profile">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/product_icon/profile.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                      <MenuItem mnemonicParsing="false" onAction="#addressClicked" text="Address">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/product_icon/address.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#ordersClicked" text="Orders">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/product_icon/order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#signOutClicked" text="Sign Out">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/product_icon/signout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="80.0" prefWidth="900.0" styleClass="customPane">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="129.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="303.0" layoutY="30.0" prefHeight="20.0" prefWidth="114.0" text="☎ 0977358129">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="429.0" layoutY="30.0" prefHeight="20.0" prefWidth="163.0" text="💌 freshlime@gmail.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" layoutY="30.0" prefHeight="20.0" prefWidth="182.0" text="📌 Nam Từ Liêm, Hà Nội">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ImageView layoutX="823.0" layoutY="28.0" onMouseClicked="#cartButtonClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/shopping-cart.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

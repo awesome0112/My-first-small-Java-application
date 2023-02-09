@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="60.0" prefWidth="454.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #b8e994; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CommentController">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="customerName" layoutX="65.0" layoutY="7.0" prefHeight="18.0" prefWidth="370.0" text="Full name" />
+      <Label fx:id="comment" layoutX="65.0" layoutY="25.0" prefHeight="25.0" prefWidth="370.0" text="It's sucks" />
+      <Separator layoutX="65.0" layoutY="50.0" prefWidth="370.0" />
+   </children>
+</AnchorPane>

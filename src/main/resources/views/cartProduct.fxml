@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="100.0" prefWidth="870.0" style="-fx-background-color: #b8e994; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CartProductController">
+   <children>
+      <ImageView fx:id="image" fitHeight="86.0" fitWidth="85.0" layoutX="48.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/products/Bread/black_pillow_bread.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="productCheckBox" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="3.0" style="-fx-font-size: 15;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="name" layoutX="141.0" layoutY="10.0" prefHeight="32.0" prefWidth="354.0" style="-fx-font-size: 22;" text="Black Pillow Bread">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="category" layoutX="141.0" layoutY="43.0" prefHeight="18.0" prefWidth="141.0" style="-fx-font-size: 13;" text="Category">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="quantity" editable="true" layoutX="515.0" layoutY="38.0" prefHeight="22.0" prefWidth="58.0" style="-fx-background-color: #dfe6e9;" />
+      <Label fx:id="price" layoutX="141.0" layoutY="65.0" prefHeight="26.0" prefWidth="75.0" style="-fx-font-size: 18;" text="\$10.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="803.0" layoutY="39.0" onMouseClicked="#deleteButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/delete.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="593.0" layoutY="37.0" style="-fx-font-size: 18;" text="Total price: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPrice" layoutX="696.0" layoutY="37.0" prefHeight="18.0" prefWidth="85.0" style="-fx-font-size: 18; -fx-text-fill: red;" text="\$10.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

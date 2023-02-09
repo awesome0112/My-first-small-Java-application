@@ -1,0 +1,84 @@
+.text-field {
+    -fx-background-color: "#dfe6e9";
+    -fx-font-family: "Trebuchet MS";
+    -fx-background-radius: 20;
+}
+
+.button {
+    -fx-background-color: "#009432";
+    -fx-font-family: "Trebuchet MS";
+    -fx-text-fill: "#b8e994";
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+}
+
+.label {
+    -fx-text-fill: "#009432";
+    -fx-font-weight: bold;
+    -fx-font-family: "Trebuchet MS";
+    -fx-margin-left: 10;
+}
+
+.check-box {
+    -fx-font-family: "Trebuchet MS";
+    -fx-text-fill: "#009432";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.scroll-pane {
+    -fx-background-color: "transparent";
+}
+
+.combo-box {
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-font-family: "Trebuchet MS";
+}
+
+#searchField {
+    -fx-background-color: "white";
+    -fx-font-family: "Trebuchet MS";
+    -fx-background-radius: 20;
+}
+
+.titlePane {
+    -fx-background-color: "#dfe6e9";
+}
+
+.customPane {
+    -fx-background-color: "#b8e994";
+}
+
+.signUpButtonV1 {
+    -fx-font-family: "Trebuchet MS";
+    -fx-background-color: "transparent";
+    -fx-text-fill: "#009432";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: "#009432";
+    -fx-border-radius: 20;
+}
+
+.signUpButtonV2 {
+    -fx-font-family: "Trebuchet MS";
+    -fx-background-color: "#009432";
+    -fx-text-fill: "#b8e994";
+    -fx-font-weight: bold;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 20;
+}
+
+.signUpInformationField {
+    -fx-background-color: "transparent";
+    -fx-font-family: "Trebuchet MS";
+}
+
+.backToSignInButton {
+    -fx-background-color: "transparent";
+    -fx-font-family: "Trebuchet MS";
+    -fx-text-fill: "#009432";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
